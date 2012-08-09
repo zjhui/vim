@@ -142,6 +142,13 @@ set dictionary+=/usr/share/dict/words
 set isk+=-
 
 """"""""""""""""""""""""""""""""
+" RUBY自动补全 
+" see :help ft-ruby-omni
+""""""""""""""""""""""""""""""""
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
+""""""""""""""""""""""""""""""""
 " 显示文件状态及使用tab进行缓冲区切换
 " see :help windows.txt
 """"""""""""""""""""""""""""""""
@@ -150,3 +157,4 @@ set statusline=%F:\ %l
 set hidden " in order to switch between buffers with unsaved change
 map <s-tab> :bp<cr>
 map <tab> :bn<cr>
+
